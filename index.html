@@ -56,7 +56,7 @@
      <h2 class="main-page-titles">Контакты</h2>
      <p>Вы можете забрать товар сами<br>
        заехав в наш офис
-       <img src="img/map-small.jpg" alt="карта проезда">
+       <img src="img/map-small.jpg" alt="Магазин Техномарт по адресу Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
      </p>
        <a href="contacts.html" class="button">Заблудились? Напишите Нам!</a>
      </section>
@@ -111,8 +111,28 @@
     </footer>
     <section class="modal modal-map">
             <h2 class="hidden-element">Как до нас добраться</h2>
-            <span class="modal-close">x</span>
+            <a href="contacts.html"><img src="img/modal-map.jpg" alt="Магазин Техномарт по адресу Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+            <button class="modal-close button" type="button">x</button>
     </section>
-
+    <section class="modal modal-write-us">
+     <h2 class="hidden-element">Напишите нам</h2>
+     <form class="write-us-form" action="https://htmlacademy.ru" method="post">
+       <ul>
+         <li>
+           <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+           <label for="name">Ваше Имя</label>
+         </li>
+         <li>
+           <input type="email" name="email" id="email" placeholder="email@example.com">
+           <label for="email">Ваш e-mail</label>
+         </li>
+         <li>
+           <textarea name="letter" id="letter" placeholder="В свободной форме" rows="5"></textarea>
+           <label for="letter">Текст Письма</label></li>
+       </ul>
+       </form>
+       <button class="button" type="submit">Отправить</button>
+       <button class="button modal-button" type="button">X</button>
+    </section>
   </body>
 </html>
