@@ -23,6 +23,37 @@ a {
   text-decoration: none;
 }
 
+.header-first-floor a:first-child {
+  background-color: red;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.header-first-floor a:first-child:hover ,
+.header-first-floor a:first-child:focus {
+  background-color: #ca2c37;
+  color: #ffffff;
+}
+
+.header-first-floor a:first-child:active {
+  background-color: #ba2732;
+  color: #ffffff;
+}
+
+.header-first-floor a:last-child {
+  background-color: #63a63e;
+}
+
+.header-first-floor a:last-child:focus ,
+.header-first-floor a:last-child:hover {
+  background-color: #5fbb2d;
+  color: #ffffff;
+}
+
+.header-first-floor a:last-child:active {
+  background-color: #518534;
+  color: #ffffff;
+}
+
 .header-first-floor {
   background-color: #293449;
   color: #ffffff;
@@ -30,6 +61,36 @@ a {
 .header-first-floor a {
   color: #ffffff;
   font: inherit;
+}
+
+input[type="search"] {
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+}
+
+input[type="search"]:hover {
+  background-color: #212a3a;
+}
+
+input[type="search"]::placeholder {
+  color: #ffffff;
+}
+
+input[type="search"]:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input[type="search"]:active {
+background-color: #ffffff;
+color: #000000;
+}
+
+.search-button {
+  display: none;
 }
 
 .header-second-floor h1 {
@@ -55,6 +116,17 @@ a {
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
+}
+.nav-user-login a:hover ,
+.nav-user-login a:focus {
+  background-color: #ffffff;
+  color: #f36c75;
+}
+
+.nav-user-login a:active {
+  background-color: #ffffff;
+  color: #b2b2b2;
+  border: none;
 }
 .nav-user-login {
 list-style: none;
@@ -126,11 +198,14 @@ list-style: none;
 }
 .footer-first-floor a {
   color: #ffffff;
-
 }
 .footer-first-floor a:active {
   color: #929caa;
   text-decoration: none;
+}
+
+.footer-first-floor .footer-logo {
+  background-color: red;
 }
 
 .footer-second-floor a {
@@ -209,7 +284,7 @@ color: #ffffff;
   color: #ffffff;
 }
 
-/* Конец Index */
+/* Конец Index ---------------------------------------------------------- */
 
 .breadcrumbs {
   list-style: none;
