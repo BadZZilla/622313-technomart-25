@@ -9,6 +9,11 @@ body {
   background-color: #f3f7f9;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .inner-page {
   font-family: "pt sans narrow", Arial, sans-serif;
   margin: 0px;
@@ -23,33 +28,49 @@ a {
   text-decoration: none;
 }
 
-.header-first-floor a:first-child {
+.header-first-floor-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+.header-first-floor .logoheader {
   background-color: red;
   box-shadow: 0 5px 0 0 #9a212a;
+  width: 220px;
+  box-sizing: border-box;
+  min-height: 47px;
+  margin-right: 10px;
+  padding-top: 13px;
+  text-align: center;
 }
 
-.header-first-floor a:first-child:hover ,
-.header-first-floor a:first-child:focus {
+.header-first-floor .logoheader:hover ,
+.header-first-floor .logoheader:focus {
   background-color: #ca2c37;
   color: #ffffff;
 }
 
-.header-first-floor a:first-child:active {
+.header-first-floor .logoheader:active {
   background-color: #ba2732;
   color: #ffffff;
 }
+.first-floor-navigation {
+display: flex;
+width: 500px;
+justify-content: space-between;
+margin-left: 10px;
+}
 
-.header-first-floor a:last-child {
+.first-floor-navigation a:last-child {
   background-color: #63a63e;
 }
 
-.header-first-floor a:last-child:focus ,
-.header-first-floor a:last-child:hover {
+.first-floor-navigation a:last-child:focus ,
+.first-floor-navigation a:last-child:hover {
   background-color: #5fbb2d;
   color: #ffffff;
 }
 
-.header-first-floor a:last-child:active {
+.first-floor-navigation a:last-child:active {
   background-color: #518534;
   color: #ffffff;
 }
@@ -58,10 +79,19 @@ a {
   background-color: #293449;
   color: #ffffff;
 }
-.header-first-floor a {
+.first-floor-navigation a {
   color: #ffffff;
   font: inherit;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
 }
+.first-floor-navigation a:first-child ,
+.first-floor-navigation a:nth-child(2) {
+  padding-left: 40px;
+}
+
 
 input[type="search"] {
   background-color: #293449;
@@ -69,6 +99,8 @@ input[type="search"] {
   line-height: 18px;
   color: #ffffff;
   border: none;
+  width: 240px;
+  min-height: 47px;
 }
 
 input[type="search"]:hover {
@@ -92,18 +124,27 @@ color: #000000;
 .search-button {
   display: none;
 }
+.header-second-floor {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .header-second-floor h1 {
+  width: 200px;
+  min-height: 72px;
   font-size: 16px;
   line-height: 23px;
   color: #ef5d67;
   font-style: italic;
 }
 .headed-contacts a {
+  border: 3px solid white;
+  width: 270px;
+  min-height: 72px;
   font-size: 21px;
   line-height: 21px;
   color: #ef5a64;
-  text-align: center;
 }
 .headed-contacts {
   font-size: 14px;
@@ -111,12 +152,26 @@ color: #000000;
   color: #7f8a9a;
   text-align: center;
 }
+
+.nav-user-login {
+list-style: none;
+display: flex;
+padding: 0;
+width: 280px;
+justify-content: space-between;
+}
+
 .nav-user-login a {
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
   color: #000000;
+  padding: 15px 25px;
 }
+.nav-user-login a:first-child {
+  padding-left: 40px;
+}
+
 .nav-user-login a:hover ,
 .nav-user-login a:focus {
   background-color: #ffffff;
@@ -128,22 +183,29 @@ color: #000000;
   color: #b2b2b2;
   border: none;
 }
-.nav-user-login {
-list-style: none;
-text-align: right;
-}
 
-.main-navigation ul {
+.main-navigation-list {
+  display: flex;
+  min-height: 55px;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   background-color: #32425c;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
   list-style: none;
   box-shadow: 0px 10px 0 0 #293449;
+  margin-bottom: 40px;
 }
 
 .main-navigation a {
   color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 17px;
+  padding-bottom: 19px;
 }
 
 .main-navigation a:hover ,
@@ -156,46 +218,109 @@ text-align: right;
   color: #8e939c;
   background-color: #1d2739;
 }
+.technomart-info {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery-info {
+  width: 540px;
+  min-height: 375px;
+}
+.delivery-office {
+  min-height: 375px;
+  width: 300px;
+}
 
+.deliv-servesis {
+margin: 0;
+padding: 0;
+margin-bottom: 35px;
+margin-top: 25px;
+list-style: none;
+font-size: 18px;
+line-height: 20px;
+color: #000000;
+}
+
+.deliv-company {
+  margin-bottom: 20px;
+}
 .technomart-info h2 {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
 }
-
+.technomart-map-small {
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 35px;
+}
 .technomart-info p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-}
-
-.technomart-info ul {
-  list-style: none;
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
 }
 
 .technomart-info .button {
   color: #ffffff;
   background-color: #ee3643;
   text-align: center;
+  padding: 12px 40px;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+.technomart-info .button:hover ,
+.technomart-info .button:focus {
+  background-color: #ca2c37;
+  color: #ffffff;
+}
+.technomart-info .button:active {
+  background-color: #ba2732;
+}
+.delivery-info .button {
+  width: 220px;
+}
+.delivery-office .button {
+  width: 300px;
 }
 
 .main-footer {
+  font-family: "Cuprum", Arial, sans-sans-serif;
   background-color: #32425c;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
+  margin-top: 85px;
 }
 .main-footer a:hover ,
 .main-footer a:focus {
   text-decoration: underline;
 }
+.footer-first-floor {
+display: flex;
+min-height: 68px;
+margin-bottom: 35px;
+justify-content: space-between;
+}
 
 .footer-navigation ul {
 list-style: none;
+display: flex;
+
 }
+.footer-navigation li {
+margin-right: 60px;
+}
+.footer-navigation li:last-child {
+  margin-right: 0;
+}
+
 .footer-first-floor a {
   color: #ffffff;
 }
@@ -206,6 +331,36 @@ list-style: none;
 
 .footer-first-floor .footer-logo {
   background-color: red;
+  box-shadow: 0 5px 0 0 #9a212a;
+  width: 220px;
+  box-sizing: border-box;
+  min-height: 63px;
+  padding-top: 21px;
+  text-align: center;
+}
+
+.footer-second-floor {
+  display:flex;
+  margin-bottom: 55px;
+  justify-content: space-between;
+}
+.footer-second-floor p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-goods-list ul {
+  list-style: none;
+  display: flex;
+  /* padding: 0;
+  margin: 0; */
+}
+.footer-goods-list li {
+  margin-right: 60px;
+}
+
+.footer-goods-list li:last-child {
+  margin-right: 0;
 }
 
 .footer-second-floor a {
@@ -216,9 +371,7 @@ list-style: none;
   text-decoration: none;
 }
 
-.footer-goods-list ul {
-  list-style: none;
-}
+
 .footer-goods-list a {
   color: #ffd180;
 }
@@ -226,13 +379,23 @@ list-style: none;
 .footer-third-floor {
 background-color: #293449;
 font-size: 16px;
-font-style: 18px;
+line-height: 18px;
 color: #ffffff;
+}
+
+.footer-third-floor-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.copyrights {
+  min-height: 41px;
+  width: 230px;
 }
 
 .footer-links ul {
   text-align: center;
   list-style: none;
+  display: flex;
 }
 .footer-links a {
   color: #ffffff;
@@ -288,11 +451,19 @@ color: #ffffff;
 
 .breadcrumbs {
   list-style: none;
-}
-
-.breadcrumbs a {
+  padding: 0;
+  margin: 0;
+  display: flex;
   font-size: 13px;
   line-height: 18px;
+  width: 380px;
+  min-height: 20px;
+  margin-bottom: 20px;
+}
+.breadcrumbs li {
+    margin-right: 40px;
+}
+.breadcrumbs a {
   color: #000000;
 }
 
@@ -304,14 +475,16 @@ color: #ffffff;
   background-color: #f2f6f8;
   text-transform: uppercase;
 }
-
+.filter {
+  width: 220px;
+  min-height: 750px;
+}
 .filter h2 {
   background-color: #f7f3ec;
   color: #000000;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
 }
 
 .filter fieldset {
@@ -353,19 +526,40 @@ color: #ffffff;
 .button:active {
   border: 1px solid red;
 }
-
+.catalog {
+min-height: 1200px;
+width: 700px;
+}
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
 .catalog ul {
   list-style: none;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog a {
   color: #000000;
 }
-
+.item-name {
+  width: 220px;
+  min-height: 315px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  outline: 1px solid lightgrey;
+}
+.item-name:nth-child(3n) {
+  margin-right: 0;
+}
 .old-price {
   color: #999999;
   text-decoration: line-through;
@@ -382,6 +576,7 @@ color: #ffffff;
 .about-instrument {
   background-color: #f2f6f8;
   color: #000000;
+  margin-bottom: 70px;
 }
 
 .about-instrument h2 {
@@ -395,6 +590,12 @@ color: #ffffff;
   line-height: 34px;
 }
 
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  min-height: 38px;
+  width: 38px;
+}
 .pagination-list a{
   font-size: 13px;
   line-height: 18px;

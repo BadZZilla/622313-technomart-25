@@ -11,43 +11,47 @@
   <body class="inner-page">
     <header class="main-header">
       <div class="header-first-floor">
-      <a href="index.html">
+        <div class="header-first-floor-wrapper container">
+      <a class="logoheader">
         <img src="img/main-logo.svg" alt="Техномарт">
       </a>
       <form class="search" action="https://htmlacademy.ru" method="post">
         <input type="search" placeholder="Поиск" name="search">
-          <button class="search-button" type="button"></button>
+        <button class="search-button" type="button"></button>
       </form>
-      <a href="saved-items.html">Закладки</a>
-      <a href="cart.html">Корзина</a>
-      <a href="order.html">Оформить заказ</a>
+      <div class="first-floor-navigation">
+         <a href="saved-items.html">Закладки</a>
+         <a href="cart.html">Корзина</a>
+         <a href="order.html">Оформить заказ</a>
+       </div>
+     </div>
     </div>
-    <div class="header-second-floor">
+    <div class="header-second-floor container">
     <h1 Class="header-title">Интернет магазин строительных материалов и инструментов для ремонта</h1>
     <p class="headed-contacts">
       <a href="#">+7(812)555-05-55</a><br>
       Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </p>
-    <ul class="nav-user-login">
-      <li><a class="button" href="login.html">Вход</a></li>
-      <li><a class="button" href="registration.html">Регистрация</a></li>
-    </ul>
+       <ul class="nav-user-login">
+         <li><a class="button" href="login.html">Вход</a></li>
+         <li><a class="button" href="registration.html">Регистрация</a></li>
+       </ul>
   </div>
-  <div class="header-third-floor">
+  <div class="header-third-floor container">
     <nav class="main-navigation">
-      <ul>
-       <li><a href="#">Главная</a></li>
+      <ul class="main-navigation-list">
+       <li><a href="index.html">Главная</a></li>
        <li><a href="about-us.html">Компания</a></li>
-       <li><a href="catalog.html">Каталог</a></li>
+       <li><a href="#">Каталог</a></li>
        <li><a href="news.html">Новости</a></li>
        <li><a href="special-offers.html">Спецпредложения</a></li>
        <li><a href="delivery.html">Доставка</a></li>
        <li><a href="contacts.html">Контакты</a></li>
      </ul>
    </nav>
- </div>
- </header>
- <main>
+  </div>
+  </header>
+ <main class="container">
    <section>
      <ul class="breadcrumbs">
        <li><a href="catalog.html">Каталог</a></li>
@@ -56,6 +60,7 @@
      </ul>
      <h2 class="merch-headline">Перфораторы</h2>
   </section>
+  <div class="catalog-columns">
   <section class="filter">
     <h2 class="filter-headline">Фильтр</h2>
     <form class="filter-form" action="https://htmlacademy.ru" method="get">
@@ -209,6 +214,7 @@
       <li class="pagination-page"><a href="#">Следующая</a></li>
     </ul>
     </section>
+  </div>
     <section class="about-instrument">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -217,12 +223,13 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <div class="footer-first-floor">
-        <a href="index.html" class="footer-logo">
-      <img src="img/main-logo.svg" alt="логотип Техномарт">
+        <a class="footer-logo">
+         <img src="img/main-logo.svg" alt="Техномарт">
         </a>
         <nav class="footer-navigation">
-       <ul>
+        <ul>
           <li><a href="about-us.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -244,7 +251,10 @@
        </ul>
      </nav>
    </div>
+ </div>
    <div class="footer-third-floor">
+     <div class="container">
+       <div class="footer-third-floor-wrapper">
      <p class="copyrights">
        ©2010-2019 Компания "Техномарт"<br>
        Все права защищены</p>
@@ -259,10 +269,12 @@
        <p class="developed">
          Обратная связь:<br>
          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-         <p class="developed">Разработано -<br>
-         <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+       <p class="developed">Разработано -<br>
+       <a href="https://htmlacademy.ru">htmlacademy.ru</a>
        </p>
+     </div>
     </div>
+  </div>
      </footer>
      <section class="modal modal-cart">
          <h2>Товар добавлен в корзину</h2>
