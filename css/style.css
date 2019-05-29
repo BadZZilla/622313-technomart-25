@@ -22,7 +22,7 @@ body {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-  background-color: #f3f7f9;
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
@@ -460,6 +460,7 @@ color: #ffffff;
   min-height: 20px;
   margin-bottom: 20px;
 }
+
 .breadcrumbs li {
     margin-right: 40px;
 }
@@ -474,6 +475,9 @@ color: #ffffff;
   color: #000000;
   background-color: #f2f6f8;
   text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
 }
 .filter {
   width: 220px;
@@ -557,14 +561,56 @@ width: 700px;
   margin-right: 20px;
   outline: 1px solid lightgrey;
 }
+
+.item-name:hover ,
+.item-name:focus {
+  box-shadow: 0px 10px 50px -30px #000000;
+}
+.item-name h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+.item-name a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-name img {
+  order: -1;
+}
+.item-name .price {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 140px;
+  font-size: 17px;
+  line-height: 18px;
+  justify-content: flex-end;
+}
+
+
 .item-name:nth-child(3n) {
   margin-right: 0;
+}
+.item-name:nth-child(3n) .price {
+  margin-top: 38px;
 }
 .old-price {
   color: #999999;
   text-decoration: line-through;
   font-size: 17px;
   line-height: 18px;
+  padding-left: 37px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .new-price {
@@ -572,7 +618,12 @@ width: 700px;
   background-color: red;
   font-size: 17px;
   line-height: 18px;
+  padding-left: 37px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 .about-instrument {
   background-color: #f2f6f8;
   color: #000000;
