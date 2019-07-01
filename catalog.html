@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -17,38 +17,43 @@
           </a>
           <form class="search" action="https://htmlacademy.ru" method="post">
             <div class="search-bar">
-              <input type="search" placeholder="Поиск" name="search">
+              <input type="search" placeholder="Поиск:" name="search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               <button class="search-button" type="button"></button>
             </div>
           </form>
           <div class="first-floor-navigation">
              <a class="bookmarks" href="saved-items.html">Закладки: 0</a>
-             <a class="cart" href="cart.html">Корзина: 0</a>
+             <a class="cart filled-cart" href="cart.html">Корзина: 10</a>
              <a class="checkout" href="order.html">Оформить заказ</a>
           </div>
         </div>
       </div>
       <div class="header-background-color">
           <div class="header-second-floor container">
-          <h1 Class="header-title">Интернет магазин строительных материалов и инструментов для ремонта</h1>
+          <h1 Class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <p class="header-contacts">
             <a href="#">+7(812)555-05-55</a>
             Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-             <ul class="nav-user-login">
-               <li><a class="button login" href="login.html">Вход</a></li>
-               <li><a class="button registration" href="registration.html">Регистрация</a></li>
-             </ul>
+        <div class="logged-in-user">
+          <p class="nav-user-loged">Равшан Джамшутович</p>
+          <ul class="nav-user-menu">
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
         </div>
         <div class="header-third-floor container">
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-             <li><a href="index.html">Главная</a></li>
-             <li><a href="about-us.html">Компания</a></li>
-             <li><a href="#">Каталог</a></li>
-             <li><a href="news.html">Новости</a></li>
-             <li><a href="delivery.html">Доставка</a></li>
-             <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about-us.html">Компания</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="special-offers.html">Спецпредложения</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
            </ul>
          </nav>
        </div>
@@ -67,6 +72,21 @@
   <div class="catalog-columns">
   <section class="filter">
     <h3 class="filter-headline">Фильтр:</h3>
+     <div class="price">
+       <h3>ЦЕНА:</h3>
+       <div class="price-range">
+         <div class="price-line">
+         </div>
+       </div>
+       <div class="price-wrapper">
+         <div class="min-price">
+           0
+         </div>
+         <div class="max-price">
+           30000
+         </div>
+       </div>
+     </div>
     <form class="filter-form" action="https://htmlacademy.ru" method="get">
         <fieldset class="filter-developer">
           <legend>Производители:</legend>
@@ -108,7 +128,7 @@
            </li>
          </ul>
         </fieldset>
-        <a href="#" class="filter-button">Показать</a>
+        <button type="submit" class="filter-button">Показать</button>
     </form>
   </section>
   <section class="catalog">
@@ -124,14 +144,14 @@
      </form>
      <form class="lowtohigh-form">
        <input class="hidden-element" type="radio" id="lowtohigh" value="lowtohigh" name="loworhigh">
-       <label>
+       <label class="arrow-up">
            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        	   width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
            <polygon fill="#c5c5c5" points="5.5,0 0,10 11,10 "/>
            </svg>
        </label>
        <input class="hidden-element" type="radio" id="hightolow" value="hightolow" name="loworhigh">
-       <label>
+       <label class="arrow-down">
          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
          <polyline fill="#c5c5c5" points="5.5,10 0,0 11,0 "/>
@@ -152,7 +172,7 @@
             <li class="old-price">22 500 Р.</li>
             <li class='new-price'>15 500 Р.</li>
           </ul>
-            <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
         </a>
        </li>
       <li class="item-name">
@@ -169,13 +189,11 @@
           <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000">
       </a>
       </li>
-      <li class="item-name">
-        <div class="actions">
+      <li class="item-name mod-new">
+        <div class="actions mod-new">
           <a href="#" class="buy">Купить</a>
           <a href="#" class="inbookmarks">В закладки</a>
-          <div class="flag flag-new"></div>
         </div>
-        <div class="flag flag-new"></div>
         <a href="cotalog-item.html">
         <h3>Перфоратор BOSCH BFG 2000</h3>
           <ul class="price">
@@ -198,13 +216,11 @@
           <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000">
       </a>
       </li>
-      <li class="item-name">
-        <div class="actions">
+      <li class="item-name mod-new">
+        <div class="actions mod-new">
           <a href="#" class="buy">Купить</a>
           <a href="#" class="inbookmarks">В закладки</a>
-          <div class="flag flag-new"></div>
         </div>
-        <div class="flag flag-new"></div>
         <a href="cotalog-item.html">
         <h3>Перфоратор BOSCH BFG 6000</h3>
           <ul class="price">
@@ -227,13 +243,11 @@
           <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH BFG 3000">
         </a>
       </li>
-      <li class="item-name">
-        <div class="actions">
+      <li class="item-name mod-new">
+        <div class="actions mod-new">
           <a href="#" class="buy">Купить</a>
           <a href="#" class="inbookmarks">В закладки</a>
-          <div class="flag flag-new"></div>
         </div>
-        <div class="flag flag-new"></div>
         <a href="cotalog-item.html">
           <h3>Перфоратор BOSCH BFG 3000</h3>
            <ul class="price">
@@ -285,7 +299,7 @@
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функцию дрели, шуруповерта и отбойноного молотка.
-        В<br> ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
       </section>
     </main>
@@ -306,7 +320,7 @@
       </nav>
     </div>
     <div class="footer-second-floor">
-      <p class="footer-contacts">Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      <p class="footer-contacts">Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <a href="#">+7(812)555-05-55</a>
       </p>
       <nav class="footer-goods-list">
@@ -323,10 +337,9 @@
      <div class="container">
        <div class="footer-third-floor-wrapper">
      <p class="copyrights">
-       ©2010-2019 Компания "Техномарт"<br>
+       ©2010-2019 Компания "Техномарт"
        Все права защищены</p>
-       <div class="footer-links">
-         <ul>
+         <ul class="footer-links">
            <li class="social-button vk-button">
              <a href="#">
                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
@@ -347,11 +360,10 @@
             </a>
           </li>
          </ul>
-       </div>
        <p class="developed">
-         Обратная связь:<br>
+         Обратная связь:
          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-       <p class="developed">Разработано -<br>
+       <p class="developed">Разработано -
        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
        </p>
      </div>
