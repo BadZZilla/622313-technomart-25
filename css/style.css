@@ -1,4 +1,4 @@
-body {
+ body {
      font-family: "Cuprum", Arial, sans-sans-serif;
      margin: 0px;
      padding: 0px;
@@ -145,10 +145,10 @@ body {
  .search {
      position: relative;
 }
-.search:hover{
+ .search:hover{
       background-color: #212a3a;
 }
-.search:hover input[type="search"] {
+ .search:hover input[type="search"] {
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 17px 13px;
@@ -189,7 +189,7 @@ body {
      color: #000000;
      z-index: 2;
 }
-.search-bar input[type="search"] {
+ .search-bar input[type="search"] {
     background-image: url("../img/icon-search-transparent.svg");
     background-repeat: no-repeat;
     background-position: 17px 13px;
@@ -233,7 +233,7 @@ body {
      display: flex;
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
-     justify-content: space-between;
+     /* justify-content: space-between; */
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: center;
@@ -248,7 +248,12 @@ body {
      color: #ef5d67;
      font-style: italic;
      padding-left: 52px;
+     margin-right: 68px;
 }
+ .header-second-floor .logged-in-user {
+   margin-left: 49px;
+
+ }
  .header-contacts a {
      position: relative;
      display: block;
@@ -295,6 +300,7 @@ body {
      -ms-flex-item-align: start;
      align-self: flex-start;
      margin-top: 13px;
+     margin-left: 70px;
 }
  .nav-user-login a {
      font-size: 21px;
@@ -342,7 +348,7 @@ body {
      left: 12px;
      top: 15px;
 }
-.login:active::before {
+ .login:active::before {
     position: absolute;
     width: 21px;
     height: 17px;
@@ -373,6 +379,7 @@ body {
      background-color: #ffffff;
      font-size: 21px;
      line-height: 21px;
+     margin-bottom: 8px;
 }
  .nav-user-loged a {
      color: #000000;
@@ -410,7 +417,6 @@ body {
 }
  .logged-in-user {
      position: relative;
-     margin-bottom: 8px;
 }
  .nav-user-menu a {
      padding-right: 10px;
@@ -1392,7 +1398,7 @@ body {
      width: 940px;
      -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
-     bottom: 300px;
+     bottom: 355px;
      left: 50%;
      margin-left: -470px;
 }
@@ -1467,11 +1473,11 @@ body {
      list-style: none;
 }
  .modal input:focus {
-     border:1px solid red;
+     border:2px solid red;
      outline: none;
 }
  .modal textarea:focus {
-     border:1px solid red;
+     border:2px solid red;
      outline: none;
 }
  .modal .button {
@@ -1806,10 +1812,6 @@ body {
      padding: 12px 40px;
      border-radius: 3px;
 }
-/* .button:active {
-     border: 1px solid red;
-}
- */
  .sortby {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -2118,8 +2120,9 @@ body {
      margin: 0;
      padding: 0;
      text-align: center;
-     padding-top: 75px;
-     margin-bottom: 75px;
+     padding-top: 65px;
+     padding-left: 52px;
+     margin-bottom: 69px;
      font-weight: 400;
 }
  .modal-cart::after {
@@ -2130,22 +2133,23 @@ body {
      background-repeat: no-repeat;
      background-position: 0 0;
      background-image: url("../img/icon-mark.svg");
-     top: 55px;
-     left: 50px;
+     top: 50px;
+     left: 80px;
 }
  .cart-buttons {
      background-color: #f1f1f1;
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     padding: 37px 80px;
+     padding: 36px 80px;
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
 }
  .check-out {
+     font-family: "Cuprum", Arial, sans-sans-serif;
      display: block;
-     padding: 12px 0;
+     padding: 11px 0;
      width: 220px;
      font-size: 14px;
      line-height: 18px;
@@ -2156,8 +2160,11 @@ body {
      border-radius: 5px;
      font-weight: bold;
      font-weight: 400;
+     box-sizing: border-box;
+     padding-right: 5px;
 }
  .continue-shoping {
+     font-family: "Cuprum", Arial, sans-sans-serif;
      width: 220px;
      font-weight: 400;
      font-size: 14px;
@@ -2169,4 +2176,7 @@ body {
      border: none;
      border-bottom: 5px;
      font-weight: bold;
+}
+ .modal-show {
+     display: block;
 }

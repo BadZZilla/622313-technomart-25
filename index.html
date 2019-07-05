@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -336,8 +336,8 @@
   </footer>
   <section class="modal modal-map">
     <h2 class="hidden-element">Как до нас добраться</h2>
-    <a href="contacts.html"><img src="img/modal-map.png" width="939" height="446" alt="Магазин Техномарт по адресу Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-    <button class="modal-close-button write-us-close" type="button">Закрыть</button>
+    <a href="contacts.html"><img src="img/modal-map.jpg" width="939" height="446" alt="Магазин Техномарт по адресу Г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+    <button class="modal-close-button map-close" type="button">Закрыть</button>
   </section>
   <section class="modal modal-write-us">
     <h2 class="hidden-element">Напишите нам</h2>
@@ -345,7 +345,7 @@
       <div class="input-area">
         <p>
           <label for="name">Ваше Имя</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+          <input type="text" name="login" placeholder="Имя Фамилия" id="name">
         </p>
         <p>
           <label for="email">Ваш e-mail</label>
@@ -358,10 +358,11 @@
       </div>
       <div class="button-area">
         <button class="button" type="submit">Отправить</button>
-        <button class="modal-close-button map-close" type="button">Закрыть</button>
+        <button class="modal-close-button write-us-close" type="button">Закрыть</button>
       </div>
     </form>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
