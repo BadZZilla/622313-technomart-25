@@ -233,7 +233,7 @@
      display: flex;
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
-     /* justify-content: space-between; */
+     justify-content: space-between;
      -webkit-box-align: center;
      -ms-flex-align: center;
      align-items: center;
@@ -349,15 +349,15 @@
      top: 15px;
 }
  .login:active::before {
-    position: absolute;
-    width: 21px;
-    height: 17px;
-    content: "";
-    background-image: url("../img/icon-login.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    left: 12px;
-    top: 15px;
+     position: absolute;
+     width: 21px;
+     height: 17px;
+     content: "";
+     background-image: url("../img/icon-login.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     left: 12px;
+     top: 15px;
 }
  .nav-user-login a:hover , .nav-user-login a:focus {
      background-color: #ffffff;
@@ -1940,8 +1940,8 @@
  .item-name h3 {
      text-align: center;
      -ms-flex-item-align: stretch;
-         -ms-grid-row-align: stretch;
-         align-self: stretch;
+     -ms-grid-row-align: stretch;
+     align-self: stretch;
      padding: 0;
      margin: 0;
      padding-bottom: 3px;
